@@ -1,4 +1,4 @@
-/*@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic)*/
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700,400italic');
 
 .navbar-default {
   background-color: #232323;
@@ -8,8 +8,20 @@ footer .footer-above {
   background-color: #232323;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arvo, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-family: Arvo;
+}
+
 footer .footer-below {
   background-color: black;
+}
+
+.banner {
+  background-color: #232323;
 }
 
 @media (min-width: 992px) {
@@ -24,8 +36,8 @@ footer .footer-below {
   }
 }
 
-a.nav-brand {
-
+a.navbar-brand {
+  background-image: url('img/ctdp_logo.png') no-repeat;
 }
 
 a, a:hover, a:focus, a:active, a.active {
