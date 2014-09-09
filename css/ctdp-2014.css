@@ -9,7 +9,14 @@ footer .footer-above {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
   font-family: Arvo, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header h1, 
+header h2,
+header h3 {
+  text-shadow: 2px 2px 0px rgba(0,0,0,.4) ;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -18,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 
 footer .footer-below {
   background-color: black;
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+  background-color: #f8f8f8;
 }
 
 section.banner {
@@ -31,10 +42,13 @@ section.banner {
   }
 }
 
+.navbar-fixed-top {
+  border-bottom: 0.5em solid #9e0b0f;
+}
+
 @media (min-width: 768px) {
   .navbar-fixed-top.navbar-shrink {
     padding: 0;
-    border-bottom: 1em solid #9e0b0f;
   }
 }
 
@@ -51,9 +65,11 @@ img.img-mask-bottom {
 }
 
 .navbar-default .navbar-brand {
-  background: url('../img/ctdp_logo.png') no-repeat top left;
-  height: 80px;
-  width: 300px;
+  background: url('../img/ctdp-logo.png') no-repeat top left;
+  background-size: 100% auto;
+  height: 70px;
+  width: 280px;
+  color: transparent;
 }
 
 a, a:hover, a:focus, a:active, a.active {
@@ -66,7 +82,8 @@ a, a:hover, a:focus, a:active, a.active {
   background-color: #9e0b0f;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
   color: #9e0b0f;
 }
 
@@ -93,7 +110,7 @@ a, a:hover, a:focus, a:active, a.active {
 
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  background: rgba(158,1,15,.7);
+  background: rgba(158,1,15,.5);
 }
 
 
