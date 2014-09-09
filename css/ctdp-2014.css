@@ -20,8 +20,9 @@ footer .footer-below {
   background-color: black;
 }
 
-.banner {
+section.banner {
   background-color: #232323;
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -33,11 +34,26 @@ footer .footer-below {
 @media (min-width: 768px) {
   .navbar-fixed-top.navbar-shrink {
     padding: 0;
+    border-bottom: 1em solid #9e0b0f;
   }
 }
 
-a.navbar-brand {
-  background-image: url('img/ctdp_logo.png') no-repeat;
+/*header h1 {
+  transform: perspective(500px) skew(-10deg,0deg) rotateY(30deg);
+}*/
+
+img.img-mask-top {
+  /*-webkit-mask: url('mask.svg') top left / cover;*/
+  -webkit-mask: url('../img/preview-mask-1.svg') top left / cover;
+}
+img.img-mask-bottom {
+  -webkit-mask: url('../img/preview-mask-2.svg') center right / cover;
+}
+
+.navbar-default .navbar-brand {
+  background: url('../img/ctdp_logo.png') no-repeat top left;
+  height: 80px;
+  width: 300px;
 }
 
 a, a:hover, a:focus, a:active, a.active {
@@ -48,6 +64,10 @@ a, a:hover, a:focus, a:active, a.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   background-color: #9e0b0f;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #9e0b0f;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -67,18 +87,25 @@ a, a:hover, a:focus, a:active, a.active {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(158,1,15,.9);
-  font-size: 1.2em;
+  background: rgba(158,1,15,0);
+  opacity: 1.0;
 }
+
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  background: rgba(158,1,15,.7);
+}
+
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   top: 25%;
-  width: 90%;
-  height: 20px;
+  width: 100%;
   margin-top: -12px;
-  text-align: right;
+  text-align: center;
   font-size: 20px;
   color: #fff;
+  opacity: 1.0;
+  background: rgb(158,1,15);
 }
 
 section.success {
