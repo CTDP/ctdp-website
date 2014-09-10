@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700,400italic');
 
 .navbar-default {
-  background-color: #232323;
+  background: #232323 url('../img/preview-mask-1i-b.svg') no-repeat top left;
 }
 
 footer .footer-above {
-  background-color: #232323;
+  background: #232323 url('../img/preview-mask-1i-rb.svg') no-repeat bottom right;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +13,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arvo, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-header h1, 
+header {
+  background: #9e0b0f url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+header h1,
 header h2,
 header h3 {
   text-shadow: 2px 2px 0px rgba(0,0,0,.4) ;
@@ -27,12 +33,16 @@ footer .footer-below {
   background-color: black;
 }
 
-.floating-label-form-group input, .floating-label-form-group textarea {
+.floating-label-form-group input,
+.floating-label-form-group textarea {
   background-color: #f8f8f8;
 }
 
 section.banner {
-  background-color: #232323;
+  /*background: #232323 url('../img/preview-mask-1i.svg') no-repeat top left;*/
+  background: #232323 url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
+  background-size: cover;
+  background-blend-mode: soft-light;
   color: white;
 }
 
@@ -46,11 +56,32 @@ section.banner {
   border-bottom: 0.5em solid #9e0b0f;
 }
 
+.navbar-default .navbar-brand {
+  background: url('../img/ctdp-logo.png') no-repeat top left;
+  background-size: 100% auto;
+  height: 40px;
+  width: 170px;
+  margin-top:10px;
+  margin-left:10px;
+  color: transparent !important;
+}
+
 @media (min-width: 768px) {
   .navbar-fixed-top.navbar-shrink {
     padding: 0;
   }
+  .navbar-fixed-top.navbar-shrink .navbar-brand {
+    height: 50px;
+    width: 200px;
+  }
+  .navbar-default .navbar-brand {
+    height: 70px;
+    width: 280px;
+    margin-top:5px;
+  }
 }
+
+
 
 /*header h1 {
   transform: perspective(500px) skew(-10deg,0deg) rotateY(30deg);
@@ -64,13 +95,7 @@ img.img-mask-bottom {
   -webkit-mask: url('../img/preview-mask-2.svg') center right / cover;
 }
 
-.navbar-default .navbar-brand {
-  background: url('../img/ctdp-logo.png') no-repeat top left;
-  background-size: 100% auto;
-  height: 70px;
-  width: 280px;
-  color: transparent;
-}
+
 
 a, a:hover, a:focus, a:active, a.active {
   color: #9e0b0f;
@@ -82,9 +107,10 @@ a, a:hover, a:focus, a:active, a.active {
   background-color: #9e0b0f;
 }
 
-.navbar-default .navbar-brand:hover, 
-.navbar-default .navbar-brand:focus {
+
+.navbar-default .navbar-nav>li>a {
   color: #9e0b0f;
+  text-transform: capitalize;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -103,8 +129,18 @@ a, a:hover, a:focus, a:active, a.active {
   border-bottom: 1px solid #e7e7e7;
 }
 
+#latest-project,
+#contact {
+  background: url('../img/preview-mask-1i.svg') no-repeat top left;
+}
+
+section.success {
+  background: #9e0b0f url('../img/preview-mask-1i-rb.svg') no-repeat bottom right;
+}
+
 #portfolio .portfolio-item .portfolio-link .caption {
   background: rgba(158,1,15,0);
+  /*background-blend-mode: color;*/
   opacity: 1.0;
 }
 
@@ -125,9 +161,7 @@ a, a:hover, a:focus, a:active, a.active {
   background: rgb(158,1,15);
 }
 
-section.success {
-  background-color: #9e0b0f;
-}
+
 
 .btn-outline:hover,
 .btn-outline:focus,
@@ -143,10 +177,6 @@ section.success {
 hr.star-light:after {
     color: #fff;
     background-color: #9e0b0f;
-}
-
-header {
-    background: #9e0b0f;
 }
 
 .btn-success {
