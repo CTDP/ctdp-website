@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700,400italic');
 
 .navbar-default {
-  background: #232323 url('../img/preview-mask-1i-b.svg') no-repeat top left;
+  background: #3e3e3e url('../img/preview-mask-1i-b.svg') no-repeat top left;
 }
 
 footer .footer-above {
-  background: #232323 url('../img/preview-mask-1i-rb.svg') no-repeat bottom right;
+  background: #3e3e3e url('../img/preview-mask-1i-rb.svg') no-repeat bottom right;
+}
+
+hr.star-primary {
+border-color: #3e3e3e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,16 +17,37 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arvo, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-header {
-  background: #9e0b0f url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
-  background-size: cover;
-  background-blend-mode: soft-light;
+h2 {
+  color: #3e3e3e;
 }
+
+section#about h2,
+section.banner h2 {
+  color: white;
+}
+
+header {
+  /*background: white url('../img/twitter-bg.jpg') no-repeat bottom right;*/
+  background: #9e0b0f url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
+  background-blend-mode: soft-light;
+  background-size: cover;
+}
+
+header img {
+  border: 1em solid white;
+  box-shadow: 2px 2px 0px rgba(0,0,0,.4);
+}
+
+header h2{}
 
 header h1,
 header h2,
 header h3 {
   text-shadow: 2px 2px 0px rgba(0,0,0,.4) ;
+}
+
+h3, .h3 {
+  font-size: 22px
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -33,14 +58,16 @@ footer .footer-below {
   background-color: black;
 }
 
+
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   background-color: #f8f8f8;
+  border: 1px solid #dce4ec;
 }
 
 section.banner {
-  /*background: #232323 url('../img/preview-mask-1i.svg') no-repeat top left;*/
-  background: #232323 url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
+  /*background: #3e3e3e url('../img/preview-mask-1i.svg') no-repeat top left;*/
+  background: #3e3e3e url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
   background-size: cover;
   background-blend-mode: soft-light;
   color: white;
@@ -53,7 +80,7 @@ section.banner {
 }
 
 .navbar-fixed-top {
-  border-bottom: 0.5em solid #9e0b0f;
+  /*border-bottom: 0.5em solid #9e0b0f;*/
 }
 
 .navbar-default .navbar-brand {
@@ -95,7 +122,9 @@ img.img-mask-bottom {
   -webkit-mask: url('../img/preview-mask-2.svg') center right / cover;
 }
 
-
+hr {
+  border-top: 5px solid white;
+}
 
 a, a:hover, a:focus, a:active, a.active {
   color: #9e0b0f;
@@ -109,7 +138,7 @@ a, a:hover, a:focus, a:active, a.active {
 
 
 .navbar-default .navbar-nav>li>a {
-  color: #9e0b0f;
+  /*color: #9e0b0f;*/
   text-transform: capitalize;
 }
 
@@ -130,8 +159,9 @@ a, a:hover, a:focus, a:active, a.active {
 }
 
 #latest-project,
-#contact {
-  background: url('../img/preview-mask-1i.svg') no-repeat top left;
+#contact,
+.modal-content {
+  background: white url('../img/preview-mask-1i.svg') no-repeat top left;
 }
 
 section.success {
@@ -161,6 +191,20 @@ section.success {
   background: rgb(158,1,15);
 }
 
+.btn-default,
+.btn-lg,
+.btn-success {
+  color: white;
+  background-color: #95a5a6;
+  border: 0;
+  box-shadow: 2px 2px 0px rgba(0,0,0,.4);
+}
+
+.btn-default:active,
+.btn-lg:active,
+.btn-success:active {
+  background-color: #383838;
+}
 
 
 .btn-outline:hover,
@@ -179,8 +223,3 @@ hr.star-light:after {
     background-color: #9e0b0f;
 }
 
-.btn-success {
-color: #ffffff;
-background-color: #9e0b0f;
-border-color: #9e0b0f;
-}
