@@ -9,7 +9,10 @@ footer .footer-above {
 }
 
 hr.star-primary {
-border-color: #3e3e3e;
+  border-color: #3e3e3e;
+}
+hr.star-primary:after {
+  color: #3e3e3e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,12 +110,6 @@ section.banner {
     margin-top:5px;
   }
 }
-
-
-
-/*header h1 {
-  transform: perspective(500px) skew(-10deg,0deg) rotateY(30deg);
-}*/
 
 img.img-mask-top {
   /*-webkit-mask: url('mask.svg') top left / cover;*/
