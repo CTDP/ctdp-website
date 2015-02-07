@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700,400italic');
 
 .navbar-default {
-  background: #3e3e3e url('../img/preview-mask-1i-b.svg') no-repeat top left;
+  background: #232323 url('../img/preview-mask-1i-b.svg') no-repeat top left;
 }
 
 footer .footer-above {
-  background: #3e3e3e url('../img/preview-mask-1i-rb.svg') no-repeat bottom right;
+  background: #232323 url('../img/preview-mask-1i-rb.svg') no-repeat bottom right;
 }
 
 hr.star-primary {
-  border-color: #3e3e3e;
+  border-color: #232323;
 }
 hr.star-primary:after {
-  color: #3e3e3e;
+  color: #232323;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #3e3e3e;
+  color: #232323;
 }
 
 section#about h2,
@@ -69,11 +69,46 @@ footer .footer-below {
 }
 
 section.banner {
-  /*background: #3e3e3e url('../img/preview-mask-1i.svg') no-repeat top left;*/
-  background: #3e3e3e url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
+  /*background: #232323 url('../img/preview-mask-1i.svg') no-repeat top left;*/
+  background: #232323 url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
   background-size: cover;
   background-blend-mode: soft-light;
   color: white;
+}
+
+section.banner .btn-default,
+section.banner .btn-lg,
+section.banner .btn-success,
+section.banner .btn-primary {
+  background-color: #9e0b0f;
+}
+
+section.banner hr {
+  border-color: #232323;
+  border-width: 2px
+}
+
+section.banner {
+  /*background: #232323 url('../img/preview-mask-1i.svg') no-repeat top left;*/
+  background: #232323 url('../img/portfolio/ifm2009.jpg') no-repeat bottom right;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  color: white;
+}
+
+section.banner code {
+  background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+section.banner .panel {
+  background: transparent;
+  border-radius: 0;
+}
+
+section.banner .panel-default>.panel-heading,
+section.banner .panel-footer {
+  background-color: 0;
 }
 
 @media (min-width: 992px) {
@@ -81,6 +116,7 @@ section.banner {
     width: 970px;
   }
 }
+
 
 .navbar-fixed-top {
   /*border-bottom: 0.5em solid #9e0b0f;*/
@@ -190,11 +226,27 @@ section.success {
 
 .btn-default,
 .btn-lg,
-.btn-success {
+.btn-success,
+.btn-primary {
   color: white;
-  background-color: #95a5a6;
+  background-color: #232323;
   border: 0;
   box-shadow: 2px 2px 0px rgba(0,0,0,.4);
+}
+
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #3e3e3e;
+  border-color: 0;
 }
 
 .btn-default:active,
