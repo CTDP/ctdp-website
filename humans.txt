@@ -2,8 +2,8 @@
 
 Author: Daniel Senff
 Contact: public [at] danielsenff.de
-Twitter: @dahie
-From: Berlin, Germany
+Mastodon: @dahie@chaos.social
+From: Vienna, Germany
 
 /* About this site */
 
