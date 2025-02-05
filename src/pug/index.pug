@@ -18,7 +18,22 @@ html(lang='en')
         link(href='/assets/img/apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72')
         link(href='/assets/img/apple-touch-icon-57x57-precomposed.png' rel='apple-touch-icon-precomposed')
 
-
+        meta(property='og:title' content='International Formula Masters 2009 by CTDP')
+        meta(property='og:type' content='game')
+        meta(property='og:url' content='http://www.ctdp.net')
+        meta(property='og:image' content='http://www.ctdp.net/img/portfolio/ifm2009.jpg')
+        meta(property='og:site_name' content='Cars & Tracks Development Project')
+        meta(property='og:description' content='International Formula Masters - The premiere mod by CTDP for Assetto Corsa brings you the 2009 season with all competing cars and drivers.')
+        // Twitter Card
+        meta(name='twitter:card' content='product')
+        meta(name='twitter:site' content='@team_ctdp')
+        meta(name='twitter:creator' content='@team_ctdp')
+        meta(name='twitter:domain' content='ctdp.net')
+        meta(name='twitter:title' content='International Formula Masters 2009 by CTDP')
+        meta(name='twitter:description' content='International Formula Masters - The premiere mod by CTDP for Assetto Corsa brings you the 2009 season with all competing cars and drivers')
+        meta(name='twitter:image' content='http://www.ctdp.net/img/portfolio/ifm2009.jpg')
+        meta(name='twitter:label1' content='Game')
+        meta(name='twitter:data1' content='Assetto Corsa')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -42,30 +57,15 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3(href='#latest-project') Latest
+                        li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3(href='#portfolio') Portfolio
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3(href='#contact') Contact
 
-        // Masthead
-        header.masthead.bg-primary.text-white.text-center
-            .container
-               .row
-                    .col
-                        img.img-fluid.img-mask(src='/assets/img/portfolio/ifm_2.jpg')
-                    .col
-                        .intro-message
-                        h1 International Formula Masters 2009 + Hill Climb
-                        h3 A free game addon for Assetto&nbsp;Corsa
-                        hr.intro-divider
-                        p The premier mod by CTDP for Assetto Corsa brings you the 2009 season and Hill Climb Event with all competing cars and drivers.
-                        ul.list-inline.intro-social-buttons
-                            li.page-scroll
-                            a.btn.btn-default.btn-lg(href='#download')
-                                i.fa.fa-download.fa-fw
-                                span.network-name Get for Assetto Corsa
-
+        include includes/featured.pug
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
@@ -75,17 +75,16 @@ html(lang='en')
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Portfolio Grid Items
+                
+                h3 Series Addons
+
                 .row
                     // Portfolio Item 1
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
                                     | F1 2006
                             img.img-fluid(src='/assets/img/portfolio/f12006.jpg', alt='...')
                     // Portfolio Item 2
@@ -93,7 +92,7 @@ html(lang='en')
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2', data-analytics='"Modal", {"props":{"addon":"F1-2005"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
                                     | F1 2005
                             img.img-fluid(src='/assets/img/portfolio/f12005.jpg', alt='...')
                     // Portfolio Item 3
@@ -101,7 +100,7 @@ html(lang='en')
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3', data-analytics='"Modal", {"props":{"addon":"F1-2004"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
                                     | F1 2004
                             img.img-fluid(src='/assets/img/portfolio/f12004.jpg', alt='...')
                     // Portfolio Item 4
@@ -109,7 +108,7 @@ html(lang='en')
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4', data-analytics='"Modal", {"props":{"addon":"F1-2003"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
                                     | F1 2003
                             img.img-fluid(src='/assets/img/portfolio/f12003.jpg', alt='...')
                     // Portfolio Item 5
@@ -117,7 +116,7 @@ html(lang='en')
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5', data-analytics='"Modal", {"props":{"addon":"F1-1998"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
                                     | F1 1998
                             img.img-fluid(src='/assets/img/portfolio/f11998.jpg', alt='...')
                     
@@ -127,13 +126,15 @@ html(lang='en')
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6', data-analytics='"Modal", {"props":{"addon":"Bahrain-track"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
+                                    | Bahrain Circuit
                             img.img-fluid(src='/assets/img/portfolio/bahrain.jpg', alt='...')
                     .col-md-6.col-lg-4
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6', data-analytics='"Modal", {"props":{"addon":"rfdynhud"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                    i.fa-solid.fa-magnifying-glass-plus
+                                    | rFDynHUD
                             img.img-fluid(src='/assets/img/portfolio/rfdynhud.jpg', alt='...')
 
         // About Section
@@ -143,9 +144,6 @@ html(lang='en')
                 h2.page-section-heading.text-center.text-white About
                 // Icon Divider
                 .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
                     .divider-custom-line
                 // About Section Content
                 .row
@@ -164,9 +162,6 @@ html(lang='en')
                 h2.page-section-heading.text-center.text-secondary.mb-0 Contact Me
                 // Icon Divider
                 .divider-custom
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
                     .divider-custom-line
                 // Contact Section Form
                 .row.justify-content-center

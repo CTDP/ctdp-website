@@ -2,6 +2,7 @@
 
 nav.navbar {
   background: $black url('../assets/img/preview-mask-1i-b.svg') no-repeat top left;
+  text-align: center;
 }
 
 footer.footer {
@@ -27,6 +28,10 @@ hr.star-primary {
 hr.star-light:after {
     color: #fff;
     background-color: $red;
+}
+
+.divider-custom .divider-custom-line {
+    max-width: 14rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,6 +96,7 @@ section.banner {
   background-size: cover;
   background-blend-mode: soft-light;
   color: white;
+  padding: 100px 0;
 }
 
 section.banner code {
@@ -127,6 +133,7 @@ section.banner .panel-footer {
 @media (min-width: 768px) {
   #mainNav.navbar-shrink {
     padding: 0;
+    text-align: left;
   }
   #mainNav.navbar-shrink .navbar-brand {
     height: 50px;
@@ -150,24 +157,39 @@ a, a:hover, a:focus, a:active, a.active {
   color: $red;
 }
 
-a.nav-link {
+#mainNav .navbar-nav li.nav-item a.nav-link {
     font-family: Arvo;
     &.active, &:hover, &:focus {
         background-color: $red;
-    }
-    &:hover, &:focus {
-        color: $red;
+        color: white;
+        border-radius: $border-radius;
     }
 }
 
 .content-section-a {
-  padding: 50px 0;
+    padding: 50px 0;
+    img {
+        border-radius: $border-radius;
+    }
+    h2 {
+        margin-top: 21px;
+        margin-bottom: 10.5px;
+        font-size: 32px;
+    }
 }
 
 .content-section-b {
   padding: 50px 0;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+  img {
+    border-radius: $border-radius;
+  }
+  h2 {
+        margin-top: 21px;
+        margin-bottom: 10.5px;
+        font-size: 32px;
+    }
 }
 
 #latest-project,
@@ -180,7 +202,12 @@ section.success {
   background: $red url('../assets/img/preview-mask-1i-rb.svg') no-repeat bottom right;
 }
 
-.portfolio-item-caption {
+.portfolio h3 {
+    margin-top: 21px;
+    margin-bottom: 10.5px;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
     background: rgba(158,1,15,0);
     opacity: 1.0;
     &:hover {
@@ -188,16 +215,16 @@ section.success {
     }
 }
 
-
 .portfolio-item-caption-content {
-  top: 25%;
-  width: 100%;
-  margin-top: -12px;
-  text-align: center;
-  font-size: 20px;
-  color: #fff;
-  opacity: 1.0;
-  background: rgb(158,1,15);
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    opacity: 1.0;
+    background: rgb(158,1,15);
 }
 
 .btn-default,
