@@ -1,17 +1,24 @@
 doctype html
 html(lang='en')
-
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='CTDP creates high quality content for Simracing games in their freetime.')
+        <meta name="author" content="Cars &amp; Tracks Development Project">
 
-        title Freelancer - Start Bootstrap Theme
+        title Cars &amp; Tracks Development Project
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon' type='image/png' href='/assets/img/favicon.png')
+        link(href='/assets/img/apple-touch-icon-152x152-precomposed.png' rel='apple-touch-icon-precomposed' sizes='152x152')
+        link(href='/assets/img/apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon-precomposed' sizes='144x144')
+        link(href='/assets/img/apple-touch-icon-120x120-precomposed.png' rel='apple-touch-icon-precomposed' sizes='120x120')
+        link(href='/assets/img/apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114')
+        link(href='/assets/img/apple-touch-icon-76x76-precomposed.png' rel='apple-touch-icon-precomposed' sizes='76x76')
+        link(href='/assets/img/apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72')
+        link(href='/assets/img/apple-touch-icon-57x57-precomposed.png' rel='apple-touch-icon-precomposed')
+
+
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -26,42 +33,45 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+        nav#mainNav.navbar.navbar-expand-lg.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
-                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                a.navbar-brand(href='#page-top') CTDP
+                button.navbar-toggler.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
+                            a.nav-link.py-3.px-0.px-lg-3(href='#portfolio') Portfolio
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                            a.nav-link.py-3.px-0.px-lg-3(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
+                            a.nav-link.py-3.px-0.px-lg-3(href='#contact') Contact
 
         // Masthead
         header.masthead.bg-primary.text-white.text-center
-            .container.d-flex.align-items-center.flex-column
-                // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
-                // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
-                // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+            .container
+               .row
+                    .col
+                        img.img-fluid.img-mask(src='/assets/img/portfolio/ifm_2.jpg')
+                    .col
+                        .intro-message
+                        h1 International Formula Masters 2009 + Hill Climb
+                        h3 A free game addon for Assetto&nbsp;Corsa
+                        hr.intro-divider
+                        p The premier mod by CTDP for Assetto Corsa brings you the 2009 season and Hill Climb Event with all competing cars and drivers.
+                        ul.list-inline.intro-social-buttons
+                            li.page-scroll
+                            a.btn.btn-default.btn-lg(href='#download')
+                                i.fa.fa-download.fa-fw
+                                span.network-name Get for Assetto Corsa
+
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
             .container
                 // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+                h2.page-section-heading.text-center.text-secondary.mb-0 Previous projects
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -69,55 +79,68 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Portfolio Grid Items
-                .row.justify-content-center
+                .row
                     // Portfolio Item 1
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
+                                    | F1 2006
+                            img.img-fluid(src='/assets/img/portfolio/f12006.jpg', alt='...')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2', data-analytics='"Modal", {"props":{"addon":"F1-2005"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
+                                    | F1 2005
+                            img.img-fluid(src='/assets/img/portfolio/f12005.jpg', alt='...')
                     // Portfolio Item 3
                     .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3', data-analytics='"Modal", {"props":{"addon":"F1-2004"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
+                                    | F1 2004
+                            img.img-fluid(src='/assets/img/portfolio/f12004.jpg', alt='...')
                     // Portfolio Item 4
                     .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4', data-analytics='"Modal", {"props":{"addon":"F1-2003"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
+                                    | F1 2003
+                            img.img-fluid(src='/assets/img/portfolio/f12003.jpg', alt='...')
                     // Portfolio Item 5
                     .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5', data-analytics='"Modal", {"props":{"addon":"F1-1998"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
+                                    | F1 1998
+                            img.img-fluid(src='/assets/img/portfolio/f11998.jpg', alt='...')
+                    
+                h3 Track addons &amp; Utilities
+                .row
                     .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6', data-analytics='"Modal", {"props":{"addon":"Bahrain-track"}}')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                            img.img-fluid(src='/assets/img/portfolio/bahrain.jpg', alt='...')
+                    .col-md-6.col-lg-4
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6', data-analytics='"Modal", {"props":{"addon":"rfdynhud"}}')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='/assets/img/portfolio/rfdynhud.jpg', alt='...')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
             .container
                 // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
+                h2.page-section-heading.text-center.text-white About
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -128,21 +151,17 @@ html(lang='en')
                 .row
                     .col-lg-4.ms-auto
                         p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                            | CTDP is short for Cars &amp; Tracks Development Project.
+                            | We are an independant group creating high quality content for racing simulations. We released highly acclaimed full-season addons for games such as F1 Challenge and rFactor.
                     .col-lg-4.me-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                        p.lead Our members are all motorsports enthusiasts for who modding is a hobby. CTDP's work is strictly non-profit oriented and non-commercial.
+                        p.lead We just love what we do.
 
         // Contact Section
         section#contact.page-section
             .container
                 // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                h2.page-section-heading.text-center.text-secondary.mb-0 Contact Me
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -240,34 +259,47 @@ html(lang='en')
                 .row
                     // Footer Location
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Location
+                        h4.mb-4 Imprint
                         p.lead.mb-0
-                            | 2215 John Daniel Drive
+                            | Andreas Brock
                             br
-                            | Clark, MO 65243
+                            | Forsterring 4
+                            br
+                            | DE-85283 Wolnzach
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
+                        h4.mb-4 Around the Web
+                        ul.list-inline
+                            li.list-inline-item
+                                a.btn.btn-outline-light.btn-social.mx-1(href='https://devblog.ctdp.net' rel='me')
+                                    i.fa.fa-fw.fa-rss(title='Development Blog')
+                            li.list-inline-item
+                                a.btn.btn-outline-light.btn-social.mx-1(href='https://www.facebook.com/pages/CTDP-Modding/135337433220541' rel='me' title='Facebook')
+                                    i.fa.fa-brands.fa-facebook(title='Facebook')
+                            li.list-inline-item
+                                a.btn.btn-outline-light.btn-social.mx-1(href='https://cr8r.gg/@team_ctdp' rel='me')
+                                    i.fa.fa-brands.fa-mastodon(title='Mastodon')
+                            li.list-inline-item
+                                a.btn.btn-outline-light.btn-social.mx-1(href='https://www.youtube.com/channel/UCkMaHkwNwVjLRqLlL85pGqg' rel='me' title='Youtube')
+                                    i.fa.fa-brands.fa-youtube(title='Youtube')
+                            li.list-inline-item
+                                a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/CTDP' rel='me')
+                                    i.fa.fa-brands.fa-github(title='Github')
+                            li.list-inline-item
+                                a.btn.btn-outline-light.btn-social.mx-1(href='https://sketchfab.com/ctdp' rel='me')
+                                    i.fa.fa-fw.fa-cube(title='Sketchfab')
+
                     // Footer About Text
                     .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
+                        h4.mb-4 About CTDP
                         p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                            | CTDP creates high quality content for Simracing games in their freetime.
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Your Website 2023
+                small 
+                    Copyright &copy; Cars &amp; Tracks Development Project 2025
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
@@ -276,6 +308,7 @@ html(lang='en')
         include includes/portfolio-modal-4.pug
         include includes/portfolio-modal-5.pug
         include includes/portfolio-modal-6.pug
+        include includes/portfolio-modal-7.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')

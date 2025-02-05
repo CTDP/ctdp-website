@@ -1,26 +1,39 @@
-// Portfolio Modal 1
-#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal1', aria-hidden='true')
-    .modal-dialog.modal-xl
-        .modal-content
-            .modal-header.border-0
-                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
-                .container
-                    .row.justify-content-center
-                        .col-lg-8
-                            // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
-                            // Icon Divider
-                            .divider-custom
-                                .divider-custom-line
-                                .divider-custom-icon
-                                    i.fas.fa-star
-                                .divider-custom-line
-                            // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cabin.png', alt='...')
-                            // Portfolio Modal - Text
-                            p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(data-bs-dismiss='modal')
-                                i.fas.fa-xmark.fa-fw
-                                | Close Window
+#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+  .modal-content
+    .close-modal(data-dismiss='modal')
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 F1 2006
+            hr.star-primary
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/-4ekW7kwIi8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            p
+              | F1-season 2006 meets rFactor. Good things need time. Put on your racing gloves, lucky sneakers and get out there racing. But it&apos;s not only about the driving skills you will need to succeed. Now, you will also need strategic and technical skills to win the race. Use clever updates to you car to improve your performance and finetune your setups. Be prepared for your race.
+            p Use your chances, fight for the championship, it may be your last chance!
+            ul.list-inline.intro-social-buttons
+              li
+                a.btn.btn-default.btn-lg(href='https://ctdp.248f1.net/rfactor/Formula_One_2006_by_CTDP_v1.2.1.zip')
+                  i.fa.fa-download.fa-fw
+                  span.network-name Download
+            ul.list-inline.item-details
+              li
+                | Game:
+                strong
+                  a(href='https://www.rfactor.net/') rFactor
+              li
+                | Last Release:
+                strong 1.2.1 - June 2010
+              li
+                | Size:
+                strong
+                  | 1.3 GB
+              li
+                | More:
+                strong
+                  a(href='https://download.ctdp.net/tools/CTDP-F1-2006-Templates-V1.0.7z') Templates
+            button.btn.btn-default(type='button' data-dismiss='modal')
+              i.fa.fa-times
+              |  Close

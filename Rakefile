@@ -6,5 +6,5 @@ task :server do
 end
 
 task :deploy do
-  system("rsync -avz --exclude-from=.rsync-exclude --omit-dir-times --delete . #{ssh_user}:#{remote_root}")
+  system("rsync -avz --exclude-from=.rsync-exclude --omit-dir-times --delete dist/ #{ssh_user}:#{remote_root}")
 end
