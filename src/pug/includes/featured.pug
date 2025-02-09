@@ -57,18 +57,19 @@ section#download.banner
           |  Assetto Corsa:
       .col-md-8
         .panel
-          div
-            ul.list-inline.text-center.banner-social-buttons
-              li
-                a.btn.btn-primary.btn-lg(href='https://download.ctdp.net/ac/CTDP_IFM_2009+HC_1.3.7z')
-                  i.fa.fa-download.fa-fw
-                  span.network-name Download
-            ul.list-inline.text-center
-              li.list-inline-item Mirrors:
-              li.list-inline-item
-                a(href='https://www.moddb.com/downloads/international-formula-masters-2009-hill-climb-13') ModDb
-              li.list-inline-item
-                a(href='https://www.mediafire.com/download/vhxactc1qlf84t9/CTDP_IFM_2009+HC_1.3.7z') Mediafire
+          div.text-center
+            .btn-group
+              a.btn.btn-primary.btn-lg(href='https://download.ctdp.net/ac/CTDP_IFM_2009+HC_1.3.7z')
+                i.fa.fa-download.fa-fw
+                span.network-name Download
+              a.btn.btn-primary.btn-lg.dropdown-toggle.dropdown-toggle-split(data-bs-toggle='dropdown' aria-expanded='false' data-bs-reference='parent')
+                span.visually-hidden Toggle Mirrors
+              ul.dropdown-menu
+                li
+                  a.dropdown-item(href='https://www.moddb.com/downloads/international-formula-masters-2009-hill-climb-13') ModDB
+                li
+                  a.dropdown-item(href='https://www.mediafire.com/download/vhxactc1qlf84t9/CTDP_IFM_2009+HC_1.3.7z') Mediafire
+                
             hr
           div
             p.small.text-center
