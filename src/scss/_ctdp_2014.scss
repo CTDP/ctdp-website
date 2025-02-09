@@ -179,22 +179,34 @@ a, a:hover, a:focus, a:active, a.active {
 }
 
 .content-section-b {
-  padding: 50px 0;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-  img {
-    border-radius: $border-radius;
-  }
-  h2 {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    img {
+      border-radius: $border-radius;
+    }
+    h2 {
         margin-top: 21px;
         margin-bottom: 10.5px;
         font-size: 32px;
     }
 }
 
+.modal-window {
+  overflow: auto;
+}
+
+.modal-window .modal-content {
+  padding: 0;
+}
+
+.modal-window .modal-content .modal-body {
+  padding: 5rem 10rem;;
+}
+
 #latest-project,
 #contact,
-.modal-content {
+.modal-window .modal-content .modal-body {
   background: white url('../assets/img/preview-mask-1i.svg') no-repeat top left;
 }
 
@@ -227,29 +239,43 @@ section.success {
     background: rgb(158,1,15);
 }
 
-.btn-default,
-.btn-lg,
-.btn-success,
-.btn-primary {
-  color: white;
-  background-color: $black;
-  border: 0;
-  box-shadow: 2px 2px 0px rgba(0,0,0,.4);
-}
+// .btn-default,
+// .btn-lg,
+// .btn-success,
+// .btn-primary {
+//   color: white;
+//   background-color: $black;
+//   border: 0;
+//   box-shadow: 2px 2px 0px rgba(0,0,0,.4);
+// }
 
 
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open>.dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #3e3e3e;
-  border-color: 0;
+// .btn-default:hover,
+// .btn-default:focus,
+// .btn-default:active,
+// .btn-default.active,
+// .btn-primary:hover,
+// .btn-primary:focus,
+// .btn-primary:active,
+// .btn-primary.active,
+// .open>.dropdown-toggle.btn-primary {
+//   color: #ffffff;
+//   background-color: #3e3e3e;
+//   border-color: 0;
+// }
+
+.btn {
+    --bs-btn-bg: #3e3e3e;
+    --bs-btn-color: white;
+    --bs-btn-hover-color: white
+    --bs-btn-hover-bg:
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: $dark-grey;
+    box-shadow: 2px 2px 0px rgba(0,0,0,.4);
+
+    &:active {
+        box-shadow: 0px 0px 0px rgba(0,0,0,.4);
+    }
 }
 
 .btn-default:active,
@@ -272,4 +298,9 @@ section.success {
 
 .list-inline-item {
     margin: 0.5rem;
+}
+
+.modal {
+    display: block;
+    text-align: center;
 }
