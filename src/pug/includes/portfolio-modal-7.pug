@@ -1,50 +1,54 @@
 #portfolioModal7.portfolio-modal.modal.modal-window(tabindex='-1' role='dialog' aria-hidden='true')
   .modal-content
-    .close-modal(data-dismiss='modal')
-      .lr
-        .rl
-    .modal-body
-      h2 rfDynHUD
-      hr.star-primary
-      img.img-responsive.img-centered(src='img/portfolio/rfdynhud.jpg' alt='')
-      p
-        | rfDynHUD means rFactor Dynamic HUD.
-        br
-        |                             It is a new, feature rich, configurable and extendable dynamic HUD system for rFactor. It is configured through ini files, which are created and modified using the provided editor, which is kinda self-documentary. Please consult the 
-        a(href='https://readme.ctdp.net/rfdynhud/readme.html') Documentation
-        |  with care to learn how to use this plugin.
-      ul.list-inline.intro-social-buttons
-        li
-          a.btn.btn-default.btn-lg(href='https://download.ctdp.net/rf/rfDynHUD_v1.3.0_120.7z')
-            i.fa.fa-download.fa-fw
-            span.network-name Download
-      ul.list-inline.item-details
-        li
-          | Game:
-          strong
-            a(href='https://www.rfactor.net/') rFactor
-          | &amp;
-          strong
-            a(href='https://store.steampowered.com/app/365960/rFactor_2/') rFactor2
-        li
-          | Latest Release:
-          strong 1.3.0 - July 2014
-        li
-          | More:
-          strong
-            a(href='https://readme.ctdp.net/rfdynhud/readme.html') Documentation
-          |                                     |
-          strong
-            a(href='https://github.com/CTDP/rfDynHUD') Source Code
-      h3 Your personal live overlays
-      p
-        | Create your own custom overlays of live data for rFactor with as much or as little information as you want. rfDynHUD comes with its own intuitive editor which allows you to define when and which overlays are shown to you. These overlays can be heavily customized to suit your needs. You can create different overlays for each session, car and mod.
-      h3 Many widgets, not just for drivers
-      p
-        | Several overlays sets and dozents of single widgets are included with rfDynHUD. Ecclestone TV simulates TV-coverage overlays, while other sets are better for drivers or for race directors.
-      h3 Build your own HUD
-      p
-        | rfDynHUD is Open Source and licensed under the GNU General Public License. The package includes an SDK and a rich tutorial showing you step by step how to build your very own Widgets in Java. To participate in the development have a look at the source code and join us.
-      a.btn.btn-default(href="#portfolio")
-        i.fa.fa-times
-        |  Close
+    .close-modal
+      a(href="#portfolio")
+        .lr
+          .rl
+    .modal-body.text-center.pt-5.pb-5
+      .container
+        .row.justify-content-center
+          .col-md-8
+            h2 rfDynHUD
+            hr.star-primary
+            img.img-responsive.img-centered(src='img/portfolio/rfdynhud.jpg' alt='')
+            p
+              | rfDynHUD means rFactor Dynamic HUD.
+              br
+              | It is a new, feature rich, configurable and extendable dynamic HUD system for rFactor. It is configured through ini files, which are created and modified using the provided editor, which is kinda self-documentary. Please consult the 
+              a(href='https://readme.ctdp.net/rfdynhud/readme.html') Documentation
+              |  with care to learn how to use this plugin.
+            ul.list-inline.intro-social-buttons
+              li
+                a.btn.btn-primary.btn-lg(href='https://download.ctdp.net/rf/rfDynHUD_v1.3.0_120.7z')
+                  i.fa.fa-download.fa-fw
+                  span.network-name Download
+            ul.list-inline.item-details
+              li
+                | Game:
+                strong
+                  a(href='https://www.rfactor.net/') rFactor
+                | &amp;
+                strong
+                  a(href='https://store.steampowered.com/app/365960/rFactor_2/') rFactor2
+              li
+                | Latest Release:
+                strong 1.3.0 - July 2014
+              li
+                | More:
+                strong
+                  a(href='https://readme.ctdp.net/rfdynhud/readme.html') Documentation
+                |                                     |
+                strong
+                  a(href='https://github.com/CTDP/rfDynHUD') Source Code
+            h3 Your personal live overlays
+            p
+              | Create your own custom overlays of live data for rFactor with as much or as little information as you want. rfDynHUD comes with its own intuitive editor which allows you to define when and which overlays are shown to you. These overlays can be heavily customized to suit your needs. You can create different overlays for each session, car and mod.
+            h3 Many widgets, not just for drivers
+            p
+              | Several overlays sets and dozents of single widgets are included with rfDynHUD. Ecclestone TV simulates TV-coverage overlays, while other sets are better for drivers or for race directors.
+            h3 Build your own HUD
+            p
+              | rfDynHUD is Open Source and licensed under the GNU General Public License. The package includes an SDK and a rich tutorial showing you step by step how to build your very own Widgets in Java. To participate in the development have a look at the source code and join us.
+            a.btn.btn-dark(href="#portfolio")
+              i.fa.fa-times
+              |  Close

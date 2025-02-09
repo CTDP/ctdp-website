@@ -19,15 +19,13 @@ hr {
 }
 
 hr.star-primary {
-  border-color: $black;
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border-color: $black;
     &:after {
         color: $black;
     }
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: $red;
 }
 
 .divider-custom .divider-custom-line {
@@ -42,6 +40,10 @@ h2 {
   color: $black;
 }
 
+
+section#about {
+  background: #9e0b0f url('../assets/img/preview-mask-1i-rb.svg') no-repeat bottom right;
+}
 
 section#about h2,
 section.banner h2 {
@@ -58,8 +60,10 @@ header {
     }
     
     img {
-        border: 1em solid white;
+        border: 0.5em solid white;
         box-shadow: 2px 2px 0px rgba(0,0,0,.4);
+        margin-bottom: 3rem;
+        border-radius: $border-radius;
     }
 }
 
@@ -79,17 +83,6 @@ h3, .h3 {
   border: 1px solid #dce4ec;
 }
 
-section.banner .btn-default,
-section.banner .btn-lg,
-section.banner .btn-success,
-section.banner .btn-primary {
-  background-color: $red;
-}
-
-section.banner hr {
-  border-color: $black;
-  border-width: 2px
-}
 
 section.banner {
   background: $black url('../assets/img/portfolio/ifm2009.jpg') no-repeat bottom right;
@@ -97,6 +90,11 @@ section.banner {
   background-blend-mode: soft-light;
   color: white;
   padding: 100px 0;
+}
+
+section.banner hr {
+  border-color: $black;
+  border-width: 2px
 }
 
 section.banner code {
@@ -128,6 +126,7 @@ section.banner .panel-footer {
   margin-top:10px;
   margin-left:10px;
   color: transparent !important;
+  transition: padding .3s;
 }
 
 @media (min-width: 768px) {
@@ -144,6 +143,11 @@ section.banner .panel-footer {
     width: 280px;
     margin-top:5px;
   }
+  header img {
+    margin-bottom: 0;
+    border: 1em solid white;
+  }
+
 }
 
 img.img-mask-top {
@@ -183,7 +187,7 @@ a, a:hover, a:focus, a:active, a.active {
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
     img {
-      border-radius: $border-radius;
+        border-radius: $border-radius;
     }
     h2 {
         margin-top: 21px;
@@ -193,15 +197,53 @@ a, a:hover, a:focus, a:active, a.active {
 }
 
 .modal-window {
-  overflow: auto;
+    overflow: auto;
+    display: block;
 }
 
 .modal-window .modal-content {
   padding: 0;
+  border: 0;
 }
 
-.modal-window .modal-content .modal-body {
-  padding: 5rem 10rem;;
+.modal-window .modal-content .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3001;
+
+    &:hover {
+        opacity: .3;
+    }
+    
+    .lr {
+        z-index: 1051;
+        width: 1px;
+        height: 75px;
+        margin-left: 35px;
+        background-color: #2c3e50;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+         .rl {
+            z-index: 1052;
+            width: 1px;
+            height: 75px;
+            background-color: #2c3e50;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+    }
+}
+
+.modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
 }
 
 #latest-project,
@@ -239,57 +281,12 @@ section.success {
     background: rgb(158,1,15);
 }
 
-// .btn-default,
-// .btn-lg,
-// .btn-success,
-// .btn-primary {
-//   color: white;
-//   background-color: $black;
-//   border: 0;
-//   box-shadow: 2px 2px 0px rgba(0,0,0,.4);
-// }
-
-
-// .btn-default:hover,
-// .btn-default:focus,
-// .btn-default:active,
-// .btn-default.active,
-// .btn-primary:hover,
-// .btn-primary:focus,
-// .btn-primary:active,
-// .btn-primary.active,
-// .open>.dropdown-toggle.btn-primary {
-//   color: #ffffff;
-//   background-color: #3e3e3e;
-//   border-color: 0;
-// }
-
 .btn {
-    --bs-btn-bg: #3e3e3e;
-    --bs-btn-color: white;
-    --bs-btn-hover-color: white
-    --bs-btn-hover-bg:
-    --bs-btn-active-color: white;
-    --bs-btn-active-bg: $dark-grey;
     box-shadow: 2px 2px 0px rgba(0,0,0,.4);
 
     &:active {
         box-shadow: 0px 0px 0px rgba(0,0,0,.4);
     }
-}
-
-.btn-default:active,
-.btn-lg:active,
-.btn-success:active {
-  background-color: $secondary;
-}
-
-
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-    color: $primary;
 }
 
 .floating-label-form-group-with-focus label {
@@ -298,9 +295,4 @@ section.success {
 
 .list-inline-item {
     margin: 0.5rem;
-}
-
-.modal {
-    display: block;
-    text-align: center;
 }

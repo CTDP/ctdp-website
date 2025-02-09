@@ -7,7 +7,7 @@ From: Vienna, Germany
 
 /* About this site */
 
-Based on: Freelancer - http://startbootstrap.com/freelancer
+Based on: Freelancer - https://startbootstrap.com/freelancer
 Language: English
 Doctype: HTML5 with CSS3
 Tools: bootstrap, less
