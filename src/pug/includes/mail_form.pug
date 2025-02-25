@@ -1,0 +1,56 @@
+form#contactForm(action='https://api.web3forms.com/submit' method='POST')
+  // Replace with your Access Key
+  input(type='hidden' name='access_key' value='2bf4c41b-a261-4458-9494-53975af5b749')
+  input(type="hidden" name="subject" value="New Submission from CTDP.net")
+  input(type="hidden" name="from_name" value="ctdp.net")
+  
+  .form-floating.mb-3
+    input#name.form-control(
+      type='text',
+      name='name',
+      required=''
+      placeholder='Enter your name...',
+      data-sb-validations='required'
+    )
+    label(for='name') Full name
+  
+  .form-floating.mb-3
+    input#email.form-control(
+      type='email',
+      name='email',
+      required=''
+      placeholder='name@example.com',
+      data-sb-validations='required,email'
+    )
+    label(for='email') Email address
+  
+  
+    
+    .form-floating.mb-3
+      textarea#message.form-control(
+        type='text',
+        name='message',
+        require='',
+        placeholder='Enter your message here...',
+        style='height: 10rem;',
+        data-sb-validations='required'
+      )
+      label(for='message') Message
+      .invalid-feedback(data-sb-feedback='message:required')
+        | A message is required.
+
+  // Honeypot Spam Protection
+  input.hidden(type='checkbox' name='botcheck' style='display: none;')
+  // Custom Confirmation / Success Page
+  // <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+  
+  #submitSuccessMessage.d-none
+    .text-center.mb-3
+      .fw-bolder Form submission successful!
+      | We will respond soon.
+
+  p#result.text-base.text-center.text-gray-400
+
+
+  button#submitButton.btn.btn-primary.btn-xl(type='submit') Send
+
