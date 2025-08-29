@@ -11103,6 +11103,10 @@ footer.footer {
   background: #232323 url("../assets/img/preview-mask-1i-rb.svg") no-repeat bottom right;
 }
 
+.img-responsive {
+  width: inherit;
+}
+
 .copyright {
   background-color: black;
 }
