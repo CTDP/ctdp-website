@@ -1,9 +1,16 @@
+p 
+  | You can reach us for permission requests and other questions.
+  | For permission requests, please provide references of previous work. 
+  | We do not give permission for commercial projects.
+p
+  i Be aware, CTDP is not active anymore and response times are accordingly low.
+
 form#contactForm(action='https://api.web3forms.com/submit' method='POST')
   // Replace with your Access Key
   input(type='hidden' name='access_key' value='2bf4c41b-a261-4458-9494-53975af5b749')
   input(type="hidden" name="subject" value="New Submission from CTDP.net")
   input(type="hidden" name="from_name" value="ctdp.net")
-  
+
   .form-floating.mb-3
     input#name.form-control(
       type='text',
@@ -13,7 +20,7 @@ form#contactForm(action='https://api.web3forms.com/submit' method='POST')
       data-sb-validations='required'
     )
     label(for='name') Full name
-  
+
   .form-floating.mb-3
     input#email.form-control(
       type='email',
@@ -23,9 +30,9 @@ form#contactForm(action='https://api.web3forms.com/submit' method='POST')
       data-sb-validations='required,email'
     )
     label(for='email') Email address
-  
-  
-    
+
+
+
     .form-floating.mb-3
       textarea#message.form-control(
         type='text',
@@ -43,7 +50,7 @@ form#contactForm(action='https://api.web3forms.com/submit' method='POST')
   input.hidden(type='checkbox' name='botcheck' style='display: none;')
   // Custom Confirmation / Success Page
   // <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
-  
+
   #submitSuccessMessage.d-none
     .text-center.mb-3
       .fw-bolder Form submission successful!
@@ -51,6 +58,4 @@ form#contactForm(action='https://api.web3forms.com/submit' method='POST')
 
   p#result.text-base.text-center.text-gray-400
 
-
   button#submitButton.btn.btn-primary.btn-xl(type='submit') Send
-
